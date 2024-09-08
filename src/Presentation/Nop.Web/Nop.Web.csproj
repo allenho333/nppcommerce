@@ -64,6 +64,12 @@
     <Content Update="**\*.config;**\*.json" CopyToOutputDirectory="Never" CopyToPublishDirectory="PreserveNewest" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="JavaScriptEngineSwitcher.Extensions.MsDependencyInjection" Version="3.24.1" />
+    <PackageReference Include="React.AspNet" Version="5.2.12" />
+    <PackageReference Include="V8.Net" Version="1.1.8" />
+  </ItemGroup>
+
   <!-- This target execute after "Build" target.
     We use it to clean up folder with plugins from unnecessary and obsolete libraries. -->
   <Target Name="NopTarget" AfterTargets="Build">

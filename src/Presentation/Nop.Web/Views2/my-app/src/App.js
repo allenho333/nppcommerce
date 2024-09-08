@@ -6,12 +6,18 @@ function App() {
   useEffect(() => {
     console.log('useEffect');
     //send request to https://localhost:5001/keepAlive
-    axios('https://localhost:5001/keepAlive')
-      .then(response => {
-        console.log(response);
-        return response.json();
-      })
-      .then(data => console.log(data));
+    // axios('https://localhost:5001/keepAlive')
+    //   .then(response => {
+    //     console.log(response);
+    //     return response.json();
+    //   })
+    //   .then(data => console.log(data));
+    //   axios('https://localhost:5001/my')
+    //   .then(response => {
+    //     console.log(response);
+    //     return response.json();
+    //   })
+    //   .then(data => console.log(data));
   },[]);
 
   return (
